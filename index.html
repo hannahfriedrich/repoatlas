@@ -5,14 +5,14 @@
     <title>Online Atlas Front Page Template</title>
     <!--add required stylesheet-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
     <style>
 
         body {
             height: 100%;
             padding: 20px;
             margin: 20px;
-            font-family: Cairo, sans-serif;
+            font-family: 'Josefin Sans', sans-serif;
         }
 
         .map {
@@ -24,6 +24,7 @@
             display: block;
             width: 100%;
             height: auto;
+            clip: rect(0px,300px,300px,0px);
         }
 
         .overlay {
@@ -34,13 +35,14 @@
             right: 0;
             width: 100%;
             height: auto;
-            opacity: 0.6;
-            background-color: rgba(0, 7, 10, 0.71);
+            /*opacity: 0.6;*/
+            /*background-color: rgba(0, 7, 10, 0.71);*/
             transition: .5s ease;
         }
 
         .overlay:hover {
             opacity: 0.3;
+            background-color: #9c9c9c;
         }
 
         .text {
@@ -52,6 +54,13 @@
             transform: translate(-50%, -50%);
             -ms-transform: translate(-50%, -50%);
         }
+
+        a {
+            color: purple;
+        }
+
+
+
     </style>
 
     <!--add required javascript-->
@@ -68,15 +77,15 @@
 <div class="container">
     <!-- Page Header -->
     <!--justify-content-center to center columns (col-*) inside row-->
-    <div class="row justify-content-center align-items-center">
-        <a href="#" target="_blank"><img src="http://via.placeholder.com/180x100"></a>
-    </div>
+    <!--<div class="row justify-content-center align-items-center">-->
+        <!--<a href="#" target="_blank"><img src="http://via.placeholder.com/180x100"></a>-->
+    <!--</div>-->
 
     <div class="row text-center">
         <div class="col-12">
             <h2>Hannah Friedrich's Repositories</h2>
-            <hr>
-            <h3>Chapters</h3>
+            <!--<hr>-->
+            <h3>Check out all of my repositories <a href="https://github.com/hannahfriedrich?tab=repositories">here</a></h3>
         </div>
     </div>
 
@@ -86,27 +95,29 @@
     <div class="row mx-auto text-center">
 
         <div class="col-md-4 col-lg-4 map">
-            <img src="img/airport.png" class="image">
+            <img src="img/300_airport-01.png" class="image">
             <div class="overlay">
-                <div class="text"><h3><a href="/">Airport Control Tower</a></h3>
+                <div class="text"><h3><a href="https://hannahfriedrich.github.io/AirportControlTower/">Airport Control Tower</a></h3>
                     <small>Interactive Web-Map</small>
                 </div>
             </div>
         </div>
 
+
+
         <div class="col-md-4 col-lg-4 map">
-            <img src="http://via.placeholder.com/300x300" class="image">
+            <img src="img/delta_300-01.png" class="image">
             <div class="overlay">
-                <div class="text"><h3><a href="/">The Dynamic Okavango</a></h3>
+                <div class="text"><h3><a href="https://hannahfriedrich.github.io/delta/">The Dynamic Okavango</a></h3>
                     <small>Storymap</small>
                 </div>
             </div>
         </div>
 
         <div class="col-md-4 col-lg-4 map">
-            <img src="http://via.placeholder.com/300x300" class="image">
+            <img src="img/noise_300-01.png" class="image">
             <div class="overlay">
-                <div class="text"><h3><a href="/">3D Noise</a></h3>
+                <div class="text"><h3><a href="https://hannahfriedrich.github.io/3DNoise/">3D Noise</a></h3>
                     <small>3D Cesium Map</small>
                 </div>
             </div>
@@ -117,25 +128,25 @@
     <div class="row mx-auto text-center">
 
         <div class="col-md-4 col-lg-4 map">
-            <img src="http://via.placeholder.com/300x300" class="image">
+            <img src="img/okavango_300-01.png" class="image">
             <div class="overlay">
-                <div class="text"><h3><a href="/">Okavango NDVI</a></h3>
+                <div class="text"><h3><a href="https://hannahfriedrich.github.io/okavangondvi/">Okavango NDVI</a></h3>
                     <small>Interactive NDVI Webmap</small>
                 </div>
             </div>
         </div>
         <div class="col-md-4 col-lg-4 map">
-            <img src="http://via.placeholder.com/300x300" class="image">
+            <img src="img/autumn_300-01.png" class="image">
             <div class="overlay">
-                <div class="text"><h3><a href="/">Autumn</a></h3>
+                <div class="text"><h3><a href="https://hannahfriedrich.github.io/autumn/">Autumn</a></h3>
                     <small>Mapbox Basemap</small>
                 </div>
             </div>
         </div>
         <div class="col-md-4 col-lg-4 map">
-            <img src="http://via.placeholder.com/300x300" class="image">
+            <img src="img/vhr_300-01.png" class="image">
             <div class="overlay">
-                <div class="text"><h3><a href="/">VHR Research</a></h3>
+                <div class="text"><h3><a href="https://hannahfriedrich.github.io/VHRPopProject/">VHR Research</a></h3>
                     <small>Overview of Work</small>
                 </div>
             </div>
@@ -145,25 +156,25 @@
     <div class="row mx-auto text-center">
 
         <div class="col-md-4 col-lg-4 map">
-            <img src="http://via.placeholder.com/300x300" class="image">
+            <img src="img/tfdd_300-01.png" class="image">
             <div class="overlay">
-                <div class="text"><h3><a href="/">TFDD Database</a></h3>
+                <div class="text"><h3><a href="https://hannahfriedrich.github.io/TFDDGeoViz/">TFDD Database</a></h3>
                     <small>Data geovisualization</small>
                 </div>
             </div>
         </div>
         <div class="col-md-4 col-lg-4 map">
-            <img src="http://via.placeholder.com/300x300" class="image">
+            <img src="img/bcu_300-01.png" class="image">
             <div class="overlay">
-                <div class="text"><h3><a href="/">BCU Data Conversion</a></h3>
+                <div class="text"><h3><a href="https://hannahfriedrich.github.io/BCUGeoTopoJson/">BCU Data Conversion</a></h3>
                     <small>Geojson and Topojson</small>
                 </div>
             </div>
         </div>
         <div class="col-md-4 col-lg-4 map">
-            <img src="http://via.placeholder.com/300x300" class="image">
+            <img src="img/resume_300-01.png" class="image">
             <div class="overlay">
-                <div class="text"><h3><a href="/">Resume</a></h3>
+                <div class="text"><h3><a href="https://hannahfriedrich.github.io/resume">Resume</a></h3>
                     <small>Overview of my accomplishments</small>
                 </div>
             </div>
