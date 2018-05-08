@@ -27,36 +27,69 @@
             clip: rect(0px,300px,300px,0px);
         }
 
+        /*.overlay {*/
+            /*position: absolute;*/
+            /*top: 0;*/
+            /*bottom: 0;*/
+            /*left: 0;*/
+            /*right: 0;*/
+            /*width: 100%;*/
+            /*height: auto;*/
+            /*!*opacity: 0.6;*!*/
+            /*!*background-color: rgba(0, 7, 10, 0.71);*!*/
+            /*transition: .5s ease;*/
+        /*}*/
+
+        /*.overlay:hover {*/
+            /*opacity: 0.6;*/
+            /*background-color: #9c9c9c;*/
+        /*}*/
+
+        /*.text {*/
+            /*color: white;*/
+            /*font-size: 18px;*/
+            /*position: absolute;*/
+            /*top: 50%;*/
+            /*left: 50%;*/
+            /*transform: translate(-50%, -50%);*/
+            /*-ms-transform: translate(-50%, -50%);*/
+        /*}*/
+
         .overlay {
             position: absolute;
             top: 0;
             bottom: 0;
             left: 0;
             right: 0;
+            height: 100%;
             width: 100%;
-            height: auto;
-            /*opacity: 0.6;*/
-            /*background-color: rgba(0, 7, 10, 0.71);*/
+            opacity: 0;
             transition: .5s ease;
+            background-color: #008CBA;
         }
 
-        .overlay:hover {
-            opacity: 0.3;
-            background-color: #9c9c9c;
+        .col-md-4:hover .overlay {
+            opacity: 0.9;
+        }
+
+        .col-lg-4:hover .overlay {
+            opacity: 0.9;
         }
 
         .text {
             color: white;
-            font-size: 18px;
+            font-size: 20px;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             -ms-transform: translate(-50%, -50%);
+            text-align: center;
         }
 
+
         a {
-            color: purple;
+            color: #d96032;
         }
 
 
@@ -153,6 +186,7 @@
         </div>
 
     </div>
+
     <div class="row mx-auto text-center">
 
         <div class="col-md-4 col-lg-4 map">
